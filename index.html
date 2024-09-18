@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahri-PPLG-RPL2</title>
+    <title>Ganti Warna latar belakang</title>
+    <style>
+        body {
+            font-family: Arial, Sans-serif;
+            text-align: center;
+            margin-top: 50px;
+    
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            
+    
+        }
+    </style>
 </head>
 <body>
+    <h1>klik tombol untuk mengganti warna latar</h1>
+
+    <button id="colorButton">ganti warna</button>
+
+    
+        
+    <script>
+        document.querySelector('#colorButton').addEventListener('click', function() {
+            const colors = ['#FF5733', '#33FF57', '#33FF57', '#F333FF'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.querySelector('body').style.backgroundColor = randomColor;
+        });
+    </script>
+    
+</body>
+
+
+    
+
     
 </body>
 </html>
